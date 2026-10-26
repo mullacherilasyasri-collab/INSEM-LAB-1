@@ -1,0 +1,32 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#f5f6fa;color:#222;line-height:1.6}
+header{background:#171c3b;color:white;padding:20px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+nav{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+nav a{color:white;text-decoration:none}
+nav a:hover{color:#b7aaff}
+button{background:#7563df;color:white;border:0;padding:10px 14px;border-radius:6px;cursor:pointer}
+button:hover{background:#5542c5}
+.hero{text-align:center;padding:55px 15px;background:linear-gradient(135deg,#e9e7ff,#f5edff)}
+.hero h2{font-size:34px;color:#171c3b}
+.hero p{margin:12px}
+.hero a{text-decoration:none}
+section{padding:30px 6%}
+section h2{text-align:center;color:#171c3b;margin-bottom:20px}
+#searchInput{display:block;width:100%;max-width:400px;margin:0 auto 25px;padding:12px;border:1px solid #ccc;border-radius:6px}
+.product-container{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.product-card{background:white;text-align:center;padding:24px 12px;border-radius:10px;box-shadow:0 4px 12px #0001}
+.product-card h3{color:#171c3b}
+.product-card p{margin:10px 0}
+.price{color:#6952d4;font-weight:bold;font-size:20px}
+#cart,#login{background:white;max-width:900px;margin:20px auto;border-radius:10px}
+.cart-item{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid #ddd}
+.removeButton,#clearCartButton{background:#e74c3c}
+#cartTotal{margin:15px 0}
+#loginForm{display:grid;gap:12px}
+#loginForm input{padding:12px;border:1px solid #ccc;border-radius:6px}
+#loginMessage{color:green;margin-top:10px}
+#contact{text-align:center;background:#e9e7ff}
+footer{text-align:center;background:#171c3b;color:white;padding:18px}
+@media(max-width:700px){header{flex-direction:column}.product-container{grid-template-columns:repeat(2,1fr)}.hero h2{font-size:27px}}
+@media(max-width:450px){.product-container{grid-template-columns:1fr}nav{justify-content:center}.cart-item{flex-wrap:wrap}}
+
